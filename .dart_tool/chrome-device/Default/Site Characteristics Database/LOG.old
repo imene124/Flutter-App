@@ -1,5 +1,4 @@
-2022/03/19-12:03:50.932 f34 Log #3: 4 ops saved to Table #4 OK
-2022/03/19-12:03:50.933 f34 Archiving C:\Users\Mayna\AppData\Local\Temp\flutter_tools.493af40b\flutter_tools_chrome_device.1bdbf62d\Default\Site Characteristics Database/000003.log: OK
-2022/03/19-12:03:50.934 f34 Table #4: 4 entries OK
-2022/03/19-12:03:50.936 f34 Archiving C:\Users\Mayna\AppData\Local\Temp\flutter_tools.493af40b\flutter_tools_chrome_device.1bdbf62d\Default\Site Characteristics Database/MANIFEST-000001: OK
-2022/03/19-12:03:50.940 f34 **** Repaired leveldb C:\Users\Mayna\AppData\Local\Temp\flutter_tools.493af40b\flutter_tools_chrome_device.1bdbf62d\Default\Site Characteristics Database; recovered 1 files; 248 bytes. Some data may have been lost. ****
+2022/03/20-16:07:04.089 4d40 Reusing MANIFEST C:\Users\Mayna\AppData\Local\Temp\flutter_tools.7dcd6c1\flutter_tools_chrome_device.b959e9f\Default\Site Characteristics Database/MANIFEST-000001
+2022/03/20-16:07:04.090 4d40 Recovering log #6
+2022/03/20-16:07:04.090 4d40 Reusing old log C:\Users\Mayna\AppData\Local\Temp\flutter_tools.7dcd6c1\flutter_tools_chrome_device.b959e9f\Default\Site Characteristics Database/000006.log 
+2022/03/20-16:07:04.095 4d40 Delete type=0 #3

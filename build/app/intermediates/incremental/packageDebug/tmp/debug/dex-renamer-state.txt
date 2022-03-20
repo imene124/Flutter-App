@@ -1,4 +1,4 @@
-#Sat Mar 19 12:05:16 CET 2022
+#Sun Mar 20 17:15:14 CET 2022
 base.1=C\:\\mayna\\Delivery app\\delivery_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
 base.0=C\:\\mayna\\Delivery app\\delivery_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
