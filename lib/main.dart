@@ -106,12 +106,7 @@ class Homepage extends StatelessWidget {
     )));
   }
 
-// we use 2 things parallel  => async
-// A method that launches the SelectionScreen and awaits the result from
-// Navigator.pop.
   void _navigateAndDisplaySelection(BuildContext context) async {
-    // Navigator.push returns a Future that completes after calling
-    // Navigator.pop on the Selection Screen.
     final result = await Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const SecondPage()),

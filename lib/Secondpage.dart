@@ -1,6 +1,7 @@
 import 'package:delivery_app/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:delivery_app/thirdpage.dart';
 
 //extends stateful Widget
 
@@ -15,8 +16,8 @@ class SecondPage extends StatefulWidget {
 //state object to our widget which contain data
 
 class _SecondPageState extends State<SecondPage> {
-  String text = "";
-  String value = "";
+  final String text = "";
+  final String value = "";
   bool _Obscure = true;
 
   @override
@@ -32,12 +33,12 @@ class _SecondPageState extends State<SecondPage> {
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Image(image: AssetImage('img/R2.png')),
-                        Image(image: AssetImage('img/Group.png')),
-                        Image(image: AssetImage('img/R1.png')),
+                        const Image(image: AssetImage('img/R2.png')),
+                        const Image(image: AssetImage('img/Group.png')),
+                        const Image(image: AssetImage('img/R1.png')),
                       ])),
               Align(
-                alignment: Alignment(-0.75, 0),
+                alignment: const Alignment(-0.75, 0),
                 child: Text(
                   'Hello!',
                   style: GoogleFonts.merriweather(
@@ -50,7 +51,7 @@ class _SecondPageState extends State<SecondPage> {
               ),
               Align(
                 heightFactor: 1.5,
-                alignment: Alignment(-0.5, 0.3),
+                alignment: const Alignment(-0.5, 0.3),
                 child: Text(
                   'WELCOME BACK',
                   style: GoogleFonts.merriweather(
@@ -75,7 +76,7 @@ class _SecondPageState extends State<SecondPage> {
                   ),
                   child: Column(children: [
                     Padding(
-                        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
+                        padding: const EdgeInsets.fromLTRB(30, 40, 30, 0),
                         child: TextField(
                           onChanged: (value) {
                             print('$value');
@@ -123,9 +124,7 @@ class _SecondPageState extends State<SecondPage> {
                     Align(
                         heightFactor: 0.5,
                         child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.pop(context, 'Nope.');
-                          },
+                          onPressed: () {},
                           child: Text(
                             'Log in',
                             style: GoogleFonts.nunitoSans(
@@ -155,10 +154,19 @@ class _SecondPageState extends State<SecondPage> {
                                 color: k,
                               ),
                             ),
-                            onPressed: () {}))
+                            onPressed: () {
+                              _navigateAndDisplaySelection(context);
+                            }))
                   ]))
             ]),
           ),
         ));
+  }
+
+  void _navigateAndDisplaySelection(BuildContext context) async {
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const form()),
+    );
   }
 }
