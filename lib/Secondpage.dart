@@ -1,4 +1,5 @@
 import 'package:delivery_app/colors.dart';
+import 'package:delivery_app/menupage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:delivery_app/thirdpage.dart';
@@ -124,7 +125,9 @@ class _SecondPageState extends State<SecondPage> {
                     Align(
                         heightFactor: 0.5,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            _navigateAndDisplaySelection(context);
+                          },
                           child: Text(
                             'Log in',
                             style: GoogleFonts.nunitoSans(
@@ -155,7 +158,7 @@ class _SecondPageState extends State<SecondPage> {
                               ),
                             ),
                             onPressed: () {
-                              _navigateAndDisplaySelection(context);
+                              _navigateAndDisplaySelection2(context);
                             }))
                   ]))
             ]),
@@ -165,6 +168,13 @@ class _SecondPageState extends State<SecondPage> {
 
   void _navigateAndDisplaySelection(BuildContext context) async {
     final result = await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const menu()),
+    );
+  }
+
+  void _navigateAndDisplaySelection2(BuildContext context) async {
+    final result2 = await Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const form()),
     );

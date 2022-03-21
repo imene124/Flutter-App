@@ -12,3 +12,4 @@ const h = Color.fromRGBO(144, 144, 144, 0.8);
 const L = Color.fromRGBO(138, 149, 158, 0.2);
 const M = Color.fromRGBO(48, 48, 48, 1);
 const N = Color.fromRGBO(84, 107, 111, 0.8);
+const w = Color.fromRGBO(128, 128, 128, 1);

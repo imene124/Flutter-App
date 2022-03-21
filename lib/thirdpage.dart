@@ -144,25 +144,29 @@ class _formState extends State<form> {
                   ),
                   Align(
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('Already have Acouunt?',
-                            style: GoogleFonts.nunitoSans(
-                              fontWeight: FontWeight.normal,
-                              fontStyle: FontStyle.normal,
-                              fontSize: 14,
-                              color: N,
-                            )),
-                        Text(
-                          'SIGN IN',
-                          style: GoogleFonts.nunitoSans(
-                            fontWeight: FontWeight.bold,
-                            fontStyle: FontStyle.normal,
-                            fontSize: 14,
-                          ),
-                        ),
-                      ],
-                    ),
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Already have Acouunt?',
+                              style: GoogleFonts.nunitoSans(
+                                fontWeight: FontWeight.normal,
+                                fontStyle: FontStyle.normal,
+                                fontSize: 14,
+                                color: N,
+                              )),
+                          Align(
+                              child: TextButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: Text('SIGN IN',
+                                style: GoogleFonts.nunitoSans(
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 14,
+                                  color: Colors.black,
+                                )),
+                          ))
+                        ]),
                   ),
                 ],
               )
