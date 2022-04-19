@@ -3,6 +3,7 @@ import 'package:delivery_app/menupage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:delivery_app/thirdpage.dart';
+import 'package:delivery_app/animation.dart';
 
 //extends stateful Widget
 
@@ -176,7 +177,7 @@ class _SecondPageState extends State<SecondPage> {
   void _navigateAndDisplaySelection2(BuildContext context) async {
     final result2 = await Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const form()),
+      CustomePageRoute(form()),
     );
   }
 }
