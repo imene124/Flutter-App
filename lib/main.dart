@@ -46,11 +46,12 @@ class Homepage extends StatelessWidget {
                   color: a,
                   fontSize: 24,
                 ),
-              )),
+              ),
+              ),
           const SizedBox(height: 5),
-          Align(
-              alignment: const Alignment(-0.5, 0.5),
-              heightFactor: 1,
+          Expanded(
+             // alignment: const Alignment(-0.5, 0.5),
+              //heightFactor: 1,
               child: Text('HOME BEAUTIFUL',
                   style: GoogleFonts.gelasio(
                     fontWeight: FontWeight.bold,
